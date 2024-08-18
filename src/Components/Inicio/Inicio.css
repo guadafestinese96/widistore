@@ -1,7 +1,24 @@
-.titleIndex{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        letter-spacing: 0.25em;
+ .titleIndex h1{
+    
+        font-family: "Qwitcher Grypen", cursive;    
+        text-transform: lowercase;
         text-shadow: #ff13a7 5px 2px 5px;
-        font-size: 40px;
+        font-size: 100px;
         margin: 20px;
+} 
+
+/*
+
+.titleIndex{ 
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 0.25em;
+    margin-top: 50px;
+    color: black;
+    text-shadow: 1px 1px 1px var(--colorPrimario);
+    filter: drop-shadow(1px 3px 1px rgb(255, 194, 25));
+    font-family: "Qwitcher Grypen", cursive;
+    text-transform: lowercase;
+    font-size: 100px;
+    font-weight: bolder;
 }
+    */
