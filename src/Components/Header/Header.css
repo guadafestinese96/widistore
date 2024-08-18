@@ -16,7 +16,7 @@
     width: 100px;
     height: 100px;
     border-radius: 100%;
-    border: 2px solid var(--colorPrimario);
+    border: 2px solid rgb(255, 19, 167, 0.7);
     /* animation-name: girar; */
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -130,7 +130,7 @@
 
 
 .perfumeIcon {
-    width: 60px;
+    width: 50px;
     filter: drop-shadow(1px 2px 1px var(--colorPrimario));
 }
 
