@@ -1,0 +1,45 @@
+.footerContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 70px;
+    padding: 25px;
+    bottom: 0;
+    position: fixed;
+    
+}
+
+.logosFooter{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.logosFooterEmail{
+    height: 40px;
+}
+
+.logosFooter:hover{
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    transition: 500ms;
+}
+
+.pFooter{
+    color: var(--colorPrimario);
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 500px){
+    .logosFooter{
+        width: 30px;
+        height: 30px;
+    }
+
+    .logosFooterEmail{
+        height: 30px;
+    }
+}

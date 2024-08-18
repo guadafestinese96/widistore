@@ -1,0 +1,177 @@
+.formContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.formBox {
+    background-color: rgba(0,0,0,0.8);
+    color: var(--colorPrimario);
+    justify-content: center;
+    display: flex;
+    margin: 20px;
+    border-radius: 5%;
+}
+
+.formMsj {
+    padding: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formUp{
+    display: flex;
+}
+
+.labelsForm {
+    margin: 5px;
+    font-size: 15px;
+}
+
+.fields {
+    width: 200px;
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    font-size: 15px;
+}
+.emailField{
+    width: 405px;
+}
+
+.divButton{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttonForm {
+    background-color: var(--colorPrimario);
+    width: 200px;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    filter: drop-shadow(1px 1px 3px var(--colorPrimario))
+}
+
+.buttonForm:hover{
+    cursor: pointer;
+    background-color: var(--colorSecundario);
+    border: 1px solid black;
+}
+
+.textareaField{
+    height: 100px;
+    width: 405px;
+    resize: none;
+}
+
+.swal2-confirm{
+    background-color: black;
+    color: var(--colorPrimario);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+.swal2-title{
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.swal2-popup{
+    background-color: rgb(255, 194, 25, 0.9);
+    width: 400px;
+    
+}
+
+.formError{
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+   justify-content: end;
+}
+
+
+
+.userImg{
+    width: 40px;
+    padding: 5px;
+    transform: rotateY(360);
+}
+
+.imgUserContainer{
+    width: 60px;
+    height: 60px;
+    background-color: var(--colorPrimario);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    margin: 5px;
+}
+
+.formData{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px){
+
+    .formBox {
+        width: 280px;
+        height: 380px;
+        flex-direction: column;
+    }
+    .formUp{
+        flex-direction: column;
+    }
+
+    
+    .fields {
+        width: 200px;
+        font-size: 10px;
+    }
+    .userImg{
+        width: 30px;
+        padding: 5px;
+    }
+       
+    .imgUserContainer{
+        width: 35px;
+        height: 35px;
+    }
+
+    .divButton{
+        width: 120px;
+    }
+    .buttonForm {
+        font-size: 10px;
+    }
+
+    .textareaField{
+        height: 80px;
+        font-size: 10px;
+    }
+    
+    .swal2-popup{
+        width: 150px;
+        font-size: 10px;
+    }
+    
+    .formError{
+        font-size: 10px;
+    }
+
+    .labelsForm{
+        font-size: 10px;
+    }
+    
+}
