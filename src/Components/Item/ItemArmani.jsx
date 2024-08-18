@@ -1,11 +1,11 @@
-import perfumesArmani from './ItemArmani';
-import Item from './Item';
+import perfumesArmani from './ItemArmaniJs'
+import Item from './Item'
 import { useState } from 'react';
 
 
-export default function ItemArmani(){
+function ItemArmani(){
     const [armani, setArmani] = useState(perfumesArmani);
-
+    console.log(armani)
     return(
         <div className="itemListContainer">
         {armani.map((unArmani)=>(
@@ -15,3 +15,4 @@ export default function ItemArmani(){
     </div>
     )
 }
+export default ItemArmani;

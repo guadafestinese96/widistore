@@ -1,13 +1,12 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import './FormApp.css'
 import Swal from 'sweetalert2'
-import userImg from "../../assets/user.png"
 
 export default function FormApp() {
     return (
         <div className="formContainer">
             <Formik
-                initialValues={{ message: "Hola me contacto para consultar por " }}
+                initialValues={{ message: "Hola quiero consultar por " }}
                 validate={
                     values => {
                         let errors = {};
@@ -24,7 +23,7 @@ export default function FormApp() {
                     }}
                 onSubmit={
                     (values, { setSubmitting }) => {
-                        let url = "https://formspree.io/f/mwpekgjy"
+                        let url = "https://formspree.io/f/xyzgdzdo"
                         let formData = new FormData();
                         formData.append("name", values.name)
                         formData.append("name", values.celular)
