@@ -8,6 +8,7 @@ export default function Item({ item }) {
             <div className="itemDetails">
                 <h3 className="itemMarca">{item.marca}</h3>
                 <h3 className="itemModelo">{item.modelo}</h3>
+                <h3 className="itemMl">{item.ml}</h3>
             </div>
         </div>
     )

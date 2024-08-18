@@ -15,7 +15,7 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
     flex-direction: column;
     border: 1px solid var(--colorPrimario);
@@ -35,17 +35,22 @@
     filter: drop-shadow(1px 5px 5px var(--colorSecundario));
 }
 
+.itemMarca{
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--colorPrimario);
+}
 
-.itemMarca, .itemModelo{
+.itemModelo, .itemMl{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-transform: capitalize;
-    color: var(--colorPrimario)
+    color: var(--colorPrimario);
 }
 
 .itemMarca{
     font-size: 20px;
 }
-.itemModelo{
+.itemModelo, .itemMl{
     font-size: 15px;
 }
 
@@ -55,6 +60,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 5px;
 }
 
 .stock{
@@ -65,24 +71,26 @@
 @media screen and (min-width: 320px) and (max-width: 500px){
     
 .itemContainer{
-    width: 130px;
-    height: 200px;   
+    width: 140px;
+    height: 210px;   
 }
 .itemImgContainer{
-    width: 50px;
-    height: 100px;
-    margin-bottom: 10px;
+    width: 140px;
+    height: 220px;
+    margin-bottom: 5px;
+    
 }
 
 .itemImg{
     height: 120px;
+   
    
 }
 
 .itemMarca{
     font-size: 13px;
 }
-.itemModelo{
+.itemModelo, .itemMl{
     font-size: 10px;
 }
 }
