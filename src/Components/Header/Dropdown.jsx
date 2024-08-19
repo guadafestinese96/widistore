@@ -9,7 +9,7 @@ export default function Example() {
             </button>
             <ul className="dropdown-menu">
                 <li className="liDropdown"><NavLink to='/armani'><a className="dropdown-item" href="#">Armani</a></NavLink></li>
-
+                <li className="liDropdown"><NavLink to='/pacorabanne'><a className="dropdown-item" href="#">Paco Rabanne</a></NavLink></li>
             </ul>
         </div>
 

@@ -3,7 +3,7 @@ import Item from './Item'
 import { useState } from 'react';
 
 
-function ItemArmani(){
+export default function ItemArmani(){
     const [armani, setArmani] = useState(perfumesArmani);
     console.log(armani)
     return(
@@ -15,4 +15,3 @@ function ItemArmani(){
     </div>
     )
 }
-export default ItemArmani;

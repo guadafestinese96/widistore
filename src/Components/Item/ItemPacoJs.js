@@ -1,0 +1,72 @@
+export default [
+    {
+        id: 1,
+        marca: "paco rabanne",
+        modelo: "black xs",
+        img: "blackXsH.png",
+        ml: "60 ml",
+    },
+    {
+        id: 2,
+        marca: "paco rabanne",
+        modelo: "black xs",
+        img: "blackXsM.png",
+        ml: "60 ml",
+    },
+    {
+        id: 3,
+        marca: "paco rabanne",
+        modelo: "black xs lexcess",
+        img: "blackXsLexcessH.png",
+        ml: "60 ml",
+    },
+    {
+        id: 4,
+        marca: "paco rabanne",
+        modelo: "black xs lexcess",
+        img: "blackXsLexcessM.png",
+        ml: "60 ml",
+    },
+    {
+        id: 4,
+        marca: "paco rabanne",
+        modelo: "olympea",
+        img: "olympea.png",
+        ml: "60 ml",
+    },
+    {
+        id: 4,
+        marca: "paco rabanne",
+        modelo: "invictus",
+        img: "invictus.png",
+        ml: "60 ml",
+    },
+    {
+        id: 4,
+        marca: "paco rabanne",
+        modelo: "lady million",
+        img: "ladyMillion.png",
+        ml: "60 ml",
+    },
+    {
+        id: 4,
+        marca: "paco rabanne",
+        modelo: "one million",
+        img: "oneMillion.png",
+        ml: "60 ml",
+    },
+    {
+        id: 4,
+        marca: "paco rabanne",
+        modelo: "pure xs",
+        img: "pureXsM.png",
+        ml: "60 ml",
+    },
+    {
+        id: 4,
+        marca: "paco rabanne",
+        modelo: "pure xs",
+        img: "pureXsH.png",
+        ml: "60 ml",
+    }
+]

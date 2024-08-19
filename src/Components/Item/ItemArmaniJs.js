@@ -24,5 +24,10 @@ export default [
         modelo: "code",
         img: "codeH.png",
         ml: "60 ml",
+    },{  id: 6,
+        marca: "armani",
+        modelo: "acqua di gio",
+        img: "acquaDiGioH.png",
+        ml: "60 ml",
     }
 ]

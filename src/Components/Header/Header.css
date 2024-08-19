@@ -114,7 +114,7 @@
 .dropdown-item {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: var(--colorPrimario);
-    width: 90px;
+    width: 100px;
     border-radius: 5px;
     text-align: center;
 }
