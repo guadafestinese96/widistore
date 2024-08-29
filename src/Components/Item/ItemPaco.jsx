@@ -1,14 +1,14 @@
 import perfumesPaco from './ItemPacoJs'
 import Item from './Item'
-import { useState } from 'react';
+import usePerfumes from '../../hooks/usePerfumes';
 
 
 export default function ItemPaco(){
-    const [perfume, setPerfume] = useState(perfumesPaco);
- 
+    usePerfumes(perfumesPaco);
+
     return(
         <div className="itemListContainer">
-        {perfume.map((unPerfume)=>(
+        {perfumesPaco.map((unPerfume)=>(
             <Item key={unPerfume.id} item={unPerfume}/>
         ))}
 
