@@ -108,7 +108,9 @@
     
 }
 
-
+.dropdowns{
+    display: flex;
+}
 
 .dropdown-item {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
