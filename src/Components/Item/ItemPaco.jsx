@@ -8,7 +8,7 @@ export default function ItemPaco(){
     const {products, loading} = usePerfumesDB();
 
     const perfumesPaco = products.filter((product)=> product.idMarca === "paco");
-    console.log(perfumesPaco);
+    
     return(
         <div className="itemListContainer">
         {perfumesPaco.map((unPerfume)=>(

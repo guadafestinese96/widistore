@@ -6,7 +6,7 @@ export default function ItemArmani() {
     const { products, loading} = usePerfumesDB();
      
     const productsArmani = products.filter((product)=> product.idMarca === "armani");
-    console.log(productsArmani);
+   
     
     return (
         <div className='itemListContainer'>
