@@ -62,7 +62,9 @@
     text-align: center;
     padding: 5px;
 }
-
+.itemMl{
+    text-transform: lowercase;
+}
 .stock{
     color: var(--colorPrimario);
     text-decoration: none;

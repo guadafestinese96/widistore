@@ -1,11 +1,11 @@
 import Item from "./Item";
 import "./Item.css"
 
-export default function ItemList({perfumes}){
+export default function ItemList({products}){
     return(
         <div>
-            {perfumes.map((perfume)=>{
-                <Item key={perfume.id} item={perfume}/>
+            {products.map((product)=>{
+                <Item key={product.id} item={product}/>
             })}
         </div>
     )

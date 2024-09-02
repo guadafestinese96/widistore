@@ -2,7 +2,7 @@
     display: flex;
     background-color: black;
     width: 100vw;
-    height: 110px;
+    height: 150px;
     padding: 25px;
     position: sticky;
     top: 0;
@@ -128,6 +128,14 @@
     background-color: unset;
 }
 
+.titlePerfumes{
+    font-size: 40px;
+    font-family: "Qwitcher Grypen", cursive; 
+    text-transform: lowercase; 
+    color: var(--colorSecundario);
+    filter: drop-shadow(1px 1px 1px black);
+}
+
 
 .perfumeIcon {
     width: 50px;
@@ -208,5 +216,9 @@
     .activeLink li {
         padding: 4px;
         width: 55px;
+    }
+
+    .titlePerfumes{
+        font-size: 30px;
     }
 }
