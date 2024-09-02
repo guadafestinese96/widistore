@@ -110,7 +110,6 @@
 
 
 
-
 .dropdown-item {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: var(--colorPrimario);
@@ -139,6 +138,7 @@
 
 .perfumeIcon {
     width: 50px;
+    height: 50px;
     filter: drop-shadow(1px 2px 1px var(--colorPrimario));
 }
 
@@ -148,8 +148,11 @@
  
 }
 
+.perfus, .vapes{
+    text-align: center;
+}
 .show {
-    text-align: right;
+    text-align: center;
     font-weight: bolder;
     background-color: unset;
     border: unset;
@@ -165,6 +168,9 @@
   
 }
 
+.dropdown{
+    display: flex;
+}
 
 
 @media screen and (min-width: 320px) and (max-width: 500px) {
