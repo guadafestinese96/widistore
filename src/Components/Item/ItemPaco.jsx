@@ -6,7 +6,8 @@ export default function ItemPaco(){
   
     const {products, loading} = usePerfumesDB(); 
     const perfumes = FilterByMark(products, "paco");
-    
+    if(loading) return <h2 className='loading'>Cargando...</h2>
+
     return(
         <div className="itemListContainer">
         {perfumes.map((unPerfume)=>(
