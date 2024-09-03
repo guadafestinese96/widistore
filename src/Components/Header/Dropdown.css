@@ -15,7 +15,7 @@
 .dropdown-item {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: var(--colorPrimario);
-    width: 100px;
+    width: 120px;
     border-radius: 5px;
     text-align: center;
 }
@@ -67,7 +67,7 @@
     border-radius: 5px;
     margin: 1px;
     font-size: 13px;
-  
+    
 }
 
 .dropdown{

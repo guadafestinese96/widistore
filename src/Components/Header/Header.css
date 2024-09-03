@@ -71,14 +71,7 @@
 
 }
 
-.cartEmailHeader {
-    width: 30px;
-    padding: 5px;
-}
 
-.cartEmailHeader:hover {
-    cursor: pointer;
-}
 
 .listHeaderContainer {
     display: flex;
