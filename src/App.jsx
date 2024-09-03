@@ -9,6 +9,11 @@ import ItemPaco from './Components/Item/ItemPaco'
 import ItemCarolina from './Components/Item/ItemCarolina'
 import ItemThierry from './Components/Item/ItemThierry'
 import ItemCalvin from './Components/Item/ItemCalvin'
+import ItemCreed from './Components/Item/ItemCreed'
+import ItemDior from './Components/Item/ItemDior'
+import ItemKenzo from './Components/Item/ItemKenzo'
+import ItemJdp from './Components/Item/ItemJdp'
+import ItemGivenchy from './Components/Item/ItemGivenchy'
 
 export default function App() {
 
@@ -23,6 +28,11 @@ export default function App() {
       <Route path='/carolinaherrera' element={<ItemCarolina/>}/>
       <Route path='/thierrymugler' element={<ItemThierry/>}/>
       <Route path='/calvinklein' element={<ItemCalvin/>}/>
+      <Route path='/creed' element={<ItemCreed/>}/>
+      <Route path='/dior' element={<ItemDior/>}/>
+      <Route path='/kenzo' element={<ItemKenzo/>}/>
+      <Route path='/jesusdelpozo' element={<ItemJdp/>}/>
+      <Route path='/givenchy' element={<ItemGivenchy/>}/>
    </Routes> 
     </Layout>
    </BrowserRouter>
