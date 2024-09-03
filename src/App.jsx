@@ -6,6 +6,9 @@ import Inicio from './Components/Inicio/Inicio'
 import FormApp from './Components/Form/FormApp'
 import ItemArmani from './Components/Item/ItemArmani'
 import ItemPaco from './Components/Item/ItemPaco'
+import ItemCarolina from './Components/Item/ItemCarolina'
+import ItemThierry from './Components/Item/ItemThierry'
+import ItemCalvin from './Components/Item/ItemCalvin'
 
 export default function App() {
 
@@ -17,6 +20,9 @@ export default function App() {
       <Route path='/form' element={<FormApp/>}/>
       <Route path='/armani' element={<ItemArmani/>}/>
       <Route path='/pacorabanne' element={<ItemPaco/>}/>
+      <Route path='/carolinaherrera' element={<ItemCarolina/>}/>
+      <Route path='/thierrymugler' element={<ItemThierry/>}/>
+      <Route path='/calvinklein' element={<ItemCalvin/>}/>
    </Routes> 
     </Layout>
    </BrowserRouter>

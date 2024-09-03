@@ -1,6 +1,6 @@
 
 import vapeIcon from '../../../public/vape.png'
-import './Header.css'
+import './Dropdown.css'
 
 export default function DropdownVapes() {
     return (
@@ -12,7 +12,7 @@ export default function DropdownVapes() {
                     <img src={vapeIcon} className="perfumeIcon" alt="vapeIcon" />
                 </button>
                 <ul className="dropdown-menu">
-                    <li className="liDropdown"><a className="dropdown-item" href="#">elfbar</a></li>
+                    <li className="liDropdown"><a className="dropdown-item" href="#">Elfbar</a></li>
 
                 </ul>
             </div>

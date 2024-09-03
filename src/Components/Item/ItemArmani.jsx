@@ -1,16 +1,14 @@
 import Item from './Item'
 import usePerfumesDB from '../../hooks/usePerfumesDB';
-import { useParams } from 'react-router-dom';
+import FilterByMark from './FilterByMark'
 
 export default function ItemArmani() {
     const { products, loading} = usePerfumesDB();
-     
-    const productsArmani = products.filter((product)=> product.idMarca === "armani");
-   
+    const perfumes = FilterByMark(products, "armani")
     
     return (
         <div className='itemListContainer'>
-            {productsArmani.map((product) => (
+            {perfumes.map((product) => (
                 <Item key={product.id} item={product} />
             ))}
         </div>

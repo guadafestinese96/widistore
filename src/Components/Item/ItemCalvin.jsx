@@ -2,10 +2,10 @@ import Item from './Item'
 import usePerfumesDB from '../../hooks/usePerfumesDB';
 import FilterByMark from './FilterByMark'
 
-export default function ItemPaco(){
+export default function ItemCalvin(){
   
     const {products, loading} = usePerfumesDB(); 
-    const perfumes = FilterByMark(products, "paco");
+    const perfumes = FilterByMark(products, "ck");
     
     return(
         <div className="itemListContainer">

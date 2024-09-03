@@ -1,0 +1,82 @@
+.btn,
+.btn-secondary,
+.dropdown-toggle {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black; 
+    background-color: unset;
+    border: unset;
+    
+}
+
+.dropdowns{
+    display: flex;
+}
+
+.dropdown-item {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: var(--colorPrimario);
+    width: 100px;
+    border-radius: 5px;
+    text-align: center;
+}
+.dropdown-item:hover {
+    background-color: var(--colorSecundario);
+} 
+.dropdown:hover{
+    background-color: unset;
+}
+.btn:hover{
+    background-color: unset;
+}
+
+.titlePerfumes{
+    font-size: 40px;
+    font-family: "Qwitcher Grypen", cursive; 
+    text-transform: lowercase; 
+    color: var(--colorSecundario);
+    filter: drop-shadow(1px 1px 1px black);
+}
+
+
+.perfumeIcon {
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(1px 2px 1px var(--colorPrimario));
+}
+
+.btn-secondary{
+    text-shadow: 1px 2px 1px var(--colorPrimario);
+    filter: drop-shadow(1px 2px 1px var(--colorSecundario));
+ 
+}
+
+.perfus, .vapes{
+    text-align: center;
+}
+.show {
+    text-align: center;
+    font-weight: bolder;
+    background-color: unset;
+    border: unset;
+
+}
+
+.liDropdown{
+    
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 1px;
+    font-size: 13px;
+  
+}
+
+.dropdown{
+    display: flex;
+}
+
+@media screen and (min-width: 320px) and (max-width: 500px) {
+  
+    .titlePerfumes{
+        font-size: 30px;
+    }
+}
