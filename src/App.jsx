@@ -14,6 +14,8 @@ import ItemDior from './Components/Item/ItemDior'
 import ItemKenzo from './Components/Item/ItemKenzo'
 import ItemJdp from './Components/Item/ItemJdp'
 import ItemGivenchy from './Components/Item/ItemGivenchy'
+import ItemVapes from './Components/Item/ItemVapes'
+
 
 export default function App() {
 
@@ -33,6 +35,7 @@ export default function App() {
       <Route path='/kenzo' element={<ItemKenzo/>}/>
       <Route path='/jesusdelpozo' element={<ItemJdp/>}/>
       <Route path='/givenchy' element={<ItemGivenchy/>}/>
+      <Route path='/elfbar' element={<ItemVapes/>}/>
    </Routes> 
     </Layout>
    </BrowserRouter>

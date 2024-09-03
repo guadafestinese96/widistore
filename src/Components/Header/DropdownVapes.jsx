@@ -1,4 +1,5 @@
 
+import { NavLink } from 'react-router-dom'
 import vapeIcon from '../../../public/vape.png'
 import './Dropdown.css'
 
@@ -12,8 +13,9 @@ export default function DropdownVapes() {
                     <img src={vapeIcon} className="perfumeIcon" alt="vapeIcon" />
                 </button>
                 <ul className="dropdown-menu">
-                    <li className="liDropdown"><a className="dropdown-item" href="#">Elfbar</a></li>
-
+                    <NavLink to='/elfbar'>
+                        <li className="liDropdown"><a className="dropdown-item" href="#">Elfbar</a></li>
+                    </NavLink>
                 </ul>
             </div>
         </div>
