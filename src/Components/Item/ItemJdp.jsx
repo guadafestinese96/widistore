@@ -1,6 +1,7 @@
 import Item from './Item'
 import usePerfumesDB from '../../hooks/usePerfumesDB';
 import FilterByMark from './FilterByMark'
+import ItemList from './ItemList';
 
 export default function ItemJdp(){
   
@@ -8,12 +9,7 @@ export default function ItemJdp(){
     const perfumes = FilterByMark(products, "jdp");
     if(loading) return <h2 className='loading'>Cargando...</h2>
 
-    return(
-        <div className="itemListContainer">
-        {perfumes.map((unPerfume)=>(
-            <Item key={unPerfume.id} item={unPerfume}/>
-        ))}
-
-    </div>
+    return (
+        <ItemList products={perfumes} />
     )
 }

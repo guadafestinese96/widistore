@@ -15,6 +15,8 @@ import ItemKenzo from './Components/Item/ItemKenzo'
 import ItemJdp from './Components/Item/ItemJdp'
 import ItemGivenchy from './Components/Item/ItemGivenchy'
 import ItemVapes from './Components/Item/ItemVapes'
+import Search from './Components/Search/SearchPerfumes'
+import AllProducts from './Components/AllProducts/AllProducts'
 
 
 export default function App() {
@@ -36,6 +38,7 @@ export default function App() {
       <Route path='/jesusdelpozo' element={<ItemJdp/>}/>
       <Route path='/givenchy' element={<ItemGivenchy/>}/>
       <Route path='/elfbar' element={<ItemVapes/>}/>
+      <Route path='/productos' element={<AllProducts/>}/>
    </Routes> 
     </Layout>
    </BrowserRouter>
