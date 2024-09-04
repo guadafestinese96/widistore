@@ -5,7 +5,7 @@ import './Search.css'
 import lupa from '../../../public/lupa.png'
 
 export default function SearchVapes(){
-    const {products} = usePerfumesDB();
+    const {products, loading} = usePerfumesDB();
     const [search, setSearch] = useState("");
 
     const vapes = products.filter((product)=> product.idMarca === "vape");
@@ -19,7 +19,7 @@ export default function SearchVapes(){
     const results = !search ? vapes : vapes.filter((dato)=> dato.nombre.toLowerCase().includes(search.toLowerCase()))
     console.log(results);
     
-
+    if(loading) return <h2></h2>
      return(
          <div className="searchDiv">
             <div className="input">
