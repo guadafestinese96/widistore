@@ -2,6 +2,7 @@ import { useState } from "react";
 import usePerfumesDB from '../../hooks/usePerfumesDB';
 import ItemList from "../Item/ItemList";
 import './Search.css'
+import lupa from '../../../public/lupa.png'
 
 export default function SearchVapes(){
     const {products} = usePerfumesDB();
@@ -21,7 +22,10 @@ export default function SearchVapes(){
 
      return(
          <div className="searchDiv">
-             <input value={search} onChange={searcher} type="text" placeholder="Buscar Vape" className="inputSearch"/>
+            <div className="input">
+                <img src={lupa} alt="lupa" className="lupa"/>
+                <input value={search} onChange={searcher} type="text" placeholder="Buscar Vape" className="inputSearch"/>
+             </div>
              <ItemList products={results}/>
 
         </div>
