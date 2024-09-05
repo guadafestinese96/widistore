@@ -7,7 +7,7 @@
         margin: 20px;
 } 
 .titleIndex{
-    height: 300px;
+    height: 350px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -18,10 +18,9 @@
     color: #ff13a7;
     font-size: 15px;
     background-color: var(--colorSecundario);
-    border: 1px solid black;
-    padding: 5px;
-    border-radius: 10px;
-    width: 200px;
+    padding: 2px;
+    border-radius: 5px;
+    width: 180px;
 }
 
 .verProductos:hover{
