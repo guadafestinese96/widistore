@@ -42,6 +42,26 @@ const rutas = [
     {
         path: "/givenchy",
         label: "Givenchy",
+    },
+    {
+        path: "/lancome",
+        label: "Lancome",
+    },
+    {
+        path: "/miyake",
+        label: "Miyake",
+    },
+    {
+        path: "/tomford",
+        label: "Tom Ford",
+    },
+    {
+        path: "/bvlgary",
+        label: "Bvlgary",
+    },
+    {
+        path: "/jeanpaulgaultier",
+        label: "Jean Paul Gaultier",
     }
 ]
 export default function DropdownPerfus() {

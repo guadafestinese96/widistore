@@ -14,9 +14,13 @@ import ItemDior from './Components/Item/ItemDior'
 import ItemKenzo from './Components/Item/ItemKenzo'
 import ItemJdp from './Components/Item/ItemJdp'
 import ItemGivenchy from './Components/Item/ItemGivenchy'
+import ItemLancome from './Components/Item/ItemLancome'
+import ItemMiyake from './Components/Item/ItemMiyake'
 import ItemVapes from './Components/Item/ItemVapes'
-import Search from './Components/Search/SearchPerfumes'
 import AllProducts from './Components/AllProducts/AllProducts'
+import ItemTomFord from './Components/Item/ItemTomFord'
+import ItemBvlgary from './Components/Item/ItemBvlgary'
+import ItemJeanPaulGaultier from './Components/Item/ItemJeanPaulGaultier'
 
 
 export default function App() {
@@ -37,7 +41,12 @@ export default function App() {
       <Route path='/kenzo' element={<ItemKenzo/>}/>
       <Route path='/jesusdelpozo' element={<ItemJdp/>}/>
       <Route path='/givenchy' element={<ItemGivenchy/>}/>
+      <Route path='/lancome' element={<ItemLancome/>}/>
       <Route path='/elfbar' element={<ItemVapes/>}/>
+      <Route path='/miyake' element={<ItemMiyake/>}/>
+      <Route path='/tomford' element={<ItemTomFord/>}/>
+      <Route path='/bvlgary' element={<ItemBvlgary/>}/>
+      <Route path='/jeanpaulgaultier' element={<ItemJeanPaulGaultier/>}/>
       <Route path='/productos' element={<AllProducts/>}/>
    </Routes> 
     </Layout>
