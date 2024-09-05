@@ -11,7 +11,7 @@ export default function Footer() {
 
              <div className='contactFooter'>
                 <NavLink to='/form'>
-                    <img src={email} alt="email" className='logosFooterEmail' />
+                    <img src={email} alt="email" className='logosFooterEmail email' />
                 </NavLink>
             </div> 
 
