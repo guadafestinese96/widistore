@@ -13,6 +13,11 @@ export default function DropdownVapes() {
                     <img src={vapeIcon} className="perfumeIcon" alt="vapeIcon" />
                 </button>
                 <ul className="dropdown-menu">
+                    <NavLink to='productosvapes'>
+                        <li className='liDropdown'>
+                        <li className="liDropdown"><a className="dropdown-item" href="#">Ver Todos</a></li>
+                        </li>
+                    </NavLink>
                     <NavLink to='/elfbar'>
                         <li className="liDropdown"><a className="dropdown-item" href="#">Elfbar</a></li>
                     </NavLink>

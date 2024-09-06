@@ -4,6 +4,10 @@ import './Dropdown.css'
 
 const rutas = [
     {
+        path: "/productosperfumes",
+        label: "Ver Todos",
+    },
+    {
         path: "/armani",
         label: "Armani",
     },

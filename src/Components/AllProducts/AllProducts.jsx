@@ -1,12 +1,10 @@
 import SearchPerfumes from "../Search/SearchPerfumes";
-import SearchVapes from "../Search/SearchVapes";
 import './AllProducts.css'
 
-export default function AllProducts(){
+export default function AllProductsPerfumes(){
     return(
         <div className="divAllProducts">
         <SearchPerfumes/>
-        <SearchVapes/>
         </div>
     )
 }

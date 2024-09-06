@@ -17,11 +17,12 @@ import ItemGivenchy from './Components/Item/ItemGivenchy'
 import ItemLancome from './Components/Item/ItemLancome'
 import ItemMiyake from './Components/Item/ItemMiyake'
 import ItemVapes from './Components/Item/ItemVapes'
-import AllProducts from './Components/AllProducts/AllProducts'
 import ItemTomFord from './Components/Item/ItemTomFord'
 import ItemBvlgary from './Components/Item/ItemBvlgary'
 import ItemJeanPaulGaultier from './Components/Item/ItemJeanPaulGaultier'
 import ItemYves from './Components/Item/ItemYves'
+import AllProductsPerfumes from './Components/AllProducts/AllProducts'
+import AllProductsVapes from './Components/AllProducts/AllProductsVapes'
 
 
 export default function App() {
@@ -49,7 +50,8 @@ export default function App() {
       <Route path='/bvlgary' element={<ItemBvlgary/>}/>
       <Route path='/yvessaintlauren' element={<ItemYves/>}/>
       <Route path='/jeanpaulgaultier' element={<ItemJeanPaulGaultier/>}/>
-      <Route path='/productos' element={<AllProducts/>}/>
+      <Route path='/productosperfumes' element={<AllProductsPerfumes/>}/>
+      <Route path='/productosvapes' element={<AllProductsVapes/>}/>
    </Routes> 
     </Layout>
    </BrowserRouter>
