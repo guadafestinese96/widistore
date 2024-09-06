@@ -23,7 +23,7 @@ export default function FormApp() {
                     }}
                 onSubmit={
                     (values, { setSubmitting }) => {
-                        let url = "https://formspree.io/f/xyzgdzdo"
+                        let url = "https://formspree.io/f/meojdpqz"
                         let formData = new FormData();
                         formData.append("name", values.name)
                         formData.append("name", values.celular)
