@@ -3,10 +3,10 @@ import FilterByMark from './FilterByMark'
 import ItemList from './ItemList';
 
 
-export default function ItemCarolina() {
+export default function ItemYves() {
 
     const { products, loading } = usePerfumesDB();
-    const perfumes = FilterByMark(products, "ch");
+    const perfumes = FilterByMark(products, "yves");
 
     if (loading) return <h2 className='loading'>Cargando...</h2>
 

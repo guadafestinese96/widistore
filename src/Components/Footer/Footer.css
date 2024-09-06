@@ -12,20 +12,17 @@
 }
 
 .logosFooter{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin: 5px;
 }
 
 .logosFooterEmail{
-    height: 40px;
+    height: 30px;
 }
 
 .logosFooter:hover{
     cursor: pointer;
-    width: 45px;
-    height: 45px;
-    transition: 500ms;
 }
 
 .pFooter{

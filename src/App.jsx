@@ -21,6 +21,7 @@ import AllProducts from './Components/AllProducts/AllProducts'
 import ItemTomFord from './Components/Item/ItemTomFord'
 import ItemBvlgary from './Components/Item/ItemBvlgary'
 import ItemJeanPaulGaultier from './Components/Item/ItemJeanPaulGaultier'
+import ItemYves from './Components/Item/ItemYves'
 
 
 export default function App() {
@@ -46,6 +47,7 @@ export default function App() {
       <Route path='/miyake' element={<ItemMiyake/>}/>
       <Route path='/tomford' element={<ItemTomFord/>}/>
       <Route path='/bvlgary' element={<ItemBvlgary/>}/>
+      <Route path='/yvessaintlauren' element={<ItemYves/>}/>
       <Route path='/jeanpaulgaultier' element={<ItemJeanPaulGaultier/>}/>
       <Route path='/productos' element={<AllProducts/>}/>
    </Routes> 

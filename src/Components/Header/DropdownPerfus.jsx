@@ -62,6 +62,10 @@ const rutas = [
     {
         path: "/jeanpaulgaultier",
         label: "Jean Paul Gaultier",
+    },
+    {
+        path: "/yvessaintlauren",
+        label: "Yves Saint Lauren",
     }
 ]
 export default function DropdownPerfus() {
