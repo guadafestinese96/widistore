@@ -6,10 +6,4 @@
         font-size: 100px;
         margin: 20px;
 } 
-.titleIndex{
-    height: 350px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-}
+
