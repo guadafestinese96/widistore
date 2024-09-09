@@ -3,6 +3,7 @@ import './Header.css'
 import { NavLink } from 'react-router-dom'
 import DropdownPerfus from './DropdownPerfus'
 import DropdownVapes from './DropdownVapes'
+import Cart from '../Cart/Cart'
 
 export default function Header() {
     return (
@@ -10,11 +11,12 @@ export default function Header() {
             <NavLink to='/' className={({ isActive }) => isActive ? "activeLogoHeader" : "logoHeaderContainer"}>
                 <img src={logoWidi} alt="logoWidi" className='logoHeader' />
             </NavLink>
+            
             <div className='dropdowns'>
             <DropdownPerfus/>
             <DropdownVapes/>
             </div>
-            
+            <Cart/>
         </div>
     )
 }
