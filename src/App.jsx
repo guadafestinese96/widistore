@@ -21,8 +21,10 @@ import ItemTomFord from './Components/Item/ItemTomFord'
 import ItemBvlgary from './Components/Item/ItemBvlgary'
 import ItemJeanPaulGaultier from './Components/Item/ItemJeanPaulGaultier'
 import ItemYves from './Components/Item/ItemYves'
-import AllProductsPerfumes from './Components/AllProducts/AllProducts'
+import AllProductsPerfumes from './Components/AllProducts/AllProductsPerfumes'
 import AllProductsVapes from './Components/AllProducts/AllProductsVapes'
+import ItemFemenino from './Components/Item/ItemFemenino'
+import ItemMasculino from './Components/Item/ItemMasculino'
 
 
 export default function App() {
@@ -52,6 +54,8 @@ export default function App() {
       <Route path='/jeanpaulgaultier' element={<ItemJeanPaulGaultier/>}/>
       <Route path='/productosperfumes' element={<AllProductsPerfumes/>}/>
       <Route path='/productosvapes' element={<AllProductsVapes/>}/>
+      <Route path='/femenino' element={<ItemFemenino/>}/>
+      <Route path='/masculino' element={<ItemMasculino/>}/>
    </Routes> 
     </Layout>
    </BrowserRouter>

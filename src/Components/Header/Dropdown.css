@@ -74,6 +74,15 @@
     display: flex;
 }
 
+.genderButton{
+    background-color: var(--colorPrimario);
+    margin: 5px;
+}
+
+.genderButton:hover{
+    background-color: black;
+}
+
 @media screen and (min-width: 320px) and (max-width: 500px) {
   
     .titlePerfumes{

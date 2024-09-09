@@ -1,10 +1,11 @@
 import SearchPerfumes from "../Search/SearchPerfumes";
 import './AllProducts.css'
 
-export default function AllProductsPerfumes(){
-    return(
+export default function AllProductsPerfumes() {
+    return (
         <div className="divAllProducts">
-        <SearchPerfumes/>
+       
+            <SearchPerfumes />
         </div>
     )
 }

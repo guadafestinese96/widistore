@@ -1,5 +1,5 @@
 import usePerfumesDB from '../../hooks/usePerfumesDB';
-import FilterByMark from './FilterByMark'
+import FilterByMark from '../FilterProducts/FilterByMark'
 import ItemList from './ItemList';
 
 export default function ItemBvlgary() {
