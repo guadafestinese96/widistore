@@ -3,6 +3,17 @@ import { NavLink } from 'react-router-dom'
 import vapeIcon from '../../../public/vape.png'
 import './Dropdown.css'
 
+const rutas_vapes=[
+    {
+        path: "/productosvapes",
+        label:"Ver Todos" ,
+    },
+    {
+        path:"/elfbar",
+        label:"Elfbar" ,
+    }
+]
+
 export default function DropdownVapes() {
     return (
         <div className="dropdown">
@@ -12,15 +23,17 @@ export default function DropdownVapes() {
                     <h2 className="titlePerfumes">vapes</h2>
                     <img src={vapeIcon} className="perfumeIcon" alt="vapeIcon" />
                 </button>
+                
                 <ul className="dropdown-menu">
-                    <NavLink to='productosvapes'>
-                        <li className='liDropdown'>
-                        <li className="liDropdown"><a className="dropdown-item" href="#">Ver Todos</a></li>
+                    {rutas_vapes.map((ruta, index) => (
+                        <li key={index} className="liDropdown">
+                            <NavLink to={ruta.path}>
+                                <a className="dropdown-item" href="#">{ruta.label}</a>
+                            </NavLink>
                         </li>
-                    </NavLink>
-                    <NavLink to='/elfbar'>
-                        <li className="liDropdown"><a className="dropdown-item" href="#">Elfbar</a></li>
-                    </NavLink>
+                    ))}
+
+                
                 </ul>
             </div>
         </div>
