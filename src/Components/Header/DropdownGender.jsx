@@ -11,10 +11,10 @@ export default function DropdownGender() {
             </button>
             <ul class="dropdown-menu">
                 <NavLink to='/femenino'>
-                <li><a class="dropdown-item" href="#">Femenino</a></li>
+                <li><a class="dropdown-item genderLi" href="#">Femenino</a></li>
                 </NavLink>
                 <NavLink to='/masculino'>
-                <li><a class="dropdown-item" href="#">Masculino</a></li>
+                <li><a class="dropdown-item genderLi" href="#">Masculino</a></li>
                 </NavLink>
 
             </ul>

@@ -77,10 +77,19 @@
 .genderButton{
     background-color: var(--colorPrimario);
     margin: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    filter: unset;
 }
 
 .genderButton:hover{
-    background-color: black;
+    background-color: var(--colorPrimario);
+    filter: unset;
+}
+
+.genderLi{
+    margin: 1px;
+    font-size: 12px;
+    width: 90px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 500px) {
