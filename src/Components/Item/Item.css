@@ -79,6 +79,7 @@
 .addToCartButton{
     background-color: var(--colorPrimario);
     padding: 3px;
+    border: 1px solid black;
     border-radius: 5px;
     font-size: 10px;
     color: black;
