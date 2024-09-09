@@ -30,7 +30,7 @@
 }
 
 .itemImg{
-    height: 150px;
+    height: 120px;
     border-radius: 10px;
     filter: drop-shadow(1px 5px 5px var(--colorSecundario));
 }
@@ -39,6 +39,7 @@
     text-transform: uppercase;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: var(--colorPrimario);
+    font-size: 15px;
 }
 
 .itemModelo, .itemMl{
@@ -47,9 +48,7 @@
     color: var(--colorPrimario);
 }
 
-.itemMarca{
-    font-size: 20px;
-}
+
 .itemModelo, .itemMl{
     font-size: 15px;
 }
@@ -77,6 +76,13 @@
     filter: drop-shadow(1px 2px 3px var(--colorSecundario));
 }   
 
+.addToCartButton{
+    background-color: var(--colorPrimario);
+    padding: 2px;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
 @media screen and (min-width: 320px) and (max-width: 500px){
     
 .itemContainer{
@@ -89,7 +95,7 @@
 }
 
 .itemImg{
-   height: 120px;
+   height: 100px;
    width: auto;
 }
 
@@ -100,3 +106,4 @@
     font-size: 10px;
 }
 }
+

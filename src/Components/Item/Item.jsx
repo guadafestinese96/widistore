@@ -10,6 +10,7 @@ export default function Item({ item }) {
                 <h3 className="itemModelo">{item.nombre}</h3>
                 <h3 className="itemMl">{item.ml}</h3>
             </div>
+            <button className='addToCartButton'>Agregar al carrito</button>
         </div>
     )
 }
