@@ -31,33 +31,35 @@ export default function App() {
 
   return (
     <BrowserRouter>
-    <Layout>
-    <Routes>
-      <Route path='/' element={<Inicio/>} />
-      <Route path='/form' element={<FormApp/>}/>
-      <Route path='/armani' element={<ItemArmani/>}/>
-      <Route path='/pacorabanne' element={<ItemPaco/>}/>
-      <Route path='/carolinaherrera' element={<ItemCarolina/>}/>
-      <Route path='/thierrymugler' element={<ItemThierry/>}/>
-      <Route path='/calvinklein' element={<ItemCalvin/>}/>
-      <Route path='/creed' element={<ItemCreed/>}/>
-      <Route path='/dior' element={<ItemDior/>}/>
-      <Route path='/kenzo' element={<ItemKenzo/>}/>
-      <Route path='/jesusdelpozo' element={<ItemJdp/>}/>
-      <Route path='/givenchy' element={<ItemGivenchy/>}/>
-      <Route path='/lancome' element={<ItemLancome/>}/>
-      <Route path='/elfbar' element={<ItemVapes/>}/>
-      <Route path='/miyake' element={<ItemMiyake/>}/>
-      <Route path='/tomford' element={<ItemTomFord/>}/>
-      <Route path='/bvlgary' element={<ItemBvlgary/>}/>
-      <Route path='/yvessaintlauren' element={<ItemYves/>}/>
-      <Route path='/jeanpaulgaultier' element={<ItemJeanPaulGaultier/>}/>
-      <Route path='/productosperfumes' element={<AllProductsPerfumes/>}/>
-      <Route path='/productosvapes' element={<AllProductsVapes/>}/>
-      <Route path='/femenino' element={<ItemFemenino/>}/>
-      <Route path='/masculino' element={<ItemMasculino/>}/>
-   </Routes> 
-    </Layout>
-   </BrowserRouter>
+    
+        <Layout>
+          <Routes>
+            <Route path='/' element={<Inicio />} />
+            <Route path='/form' element={<FormApp />} />
+            <Route path='/armani' element={<ItemArmani />} />
+            <Route path='/pacorabanne' element={<ItemPaco />} />
+            <Route path='/carolinaherrera' element={<ItemCarolina />} />
+            <Route path='/thierrymugler' element={<ItemThierry />} />
+            <Route path='/calvinklein' element={<ItemCalvin />} />
+            <Route path='/creed' element={<ItemCreed />} />
+            <Route path='/dior' element={<ItemDior />} />
+            <Route path='/kenzo' element={<ItemKenzo />} />
+            <Route path='/jesusdelpozo' element={<ItemJdp />} />
+            <Route path='/givenchy' element={<ItemGivenchy />} />
+            <Route path='/lancome' element={<ItemLancome />} />
+            <Route path='/elfbar' element={<ItemVapes />} />
+            <Route path='/miyake' element={<ItemMiyake />} />
+            <Route path='/tomford' element={<ItemTomFord />} />
+            <Route path='/bvlgary' element={<ItemBvlgary />} />
+            <Route path='/yvessaintlauren' element={<ItemYves />} />
+            <Route path='/jeanpaulgaultier' element={<ItemJeanPaulGaultier />} />
+            <Route path='/productosperfumes' element={<AllProductsPerfumes />} />
+            <Route path='/productosvapes' element={<AllProductsVapes />} />
+            <Route path='/femenino' element={<ItemFemenino />} />
+            <Route path='/masculino' element={<ItemMasculino />} />
+          </Routes>
+        </Layout>
+     
+    </BrowserRouter>
   )
 }

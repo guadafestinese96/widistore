@@ -6,6 +6,8 @@ import { NavLink, Link } from 'react-router-dom'
 import email from '../../../public/emailN.png'
 
 export default function Footer() {
+    
+
     return (
         <div className="footerContainer">
 

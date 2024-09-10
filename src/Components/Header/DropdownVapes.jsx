@@ -27,8 +27,8 @@ export default function DropdownVapes() {
                 <ul className="dropdown-menu">
                     {rutas_vapes.map((ruta, index) => (
                         <li key={index} className="liDropdown">
-                            <NavLink to={ruta.path}>
-                                <a className="dropdown-item" href="#">{ruta.label}</a>
+                            <NavLink to={ruta.path} className="dropdown-item">
+                            {ruta.label}
                             </NavLink>
                         </li>
                     ))}
