@@ -25,13 +25,13 @@ import AllProductsPerfumes from './Components/AllProducts/AllProductsPerfumes'
 import AllProductsVapes from './Components/AllProducts/AllProductsVapes'
 import ItemFemenino from './Components/Item/ItemFemenino'
 import ItemMasculino from './Components/Item/ItemMasculino'
-
+import CartProvider from './Components/Cart/CartProvider'
 
 export default function App() {
 
   return (
     <BrowserRouter>
-    
+      <CartProvider>
         <Layout>
           <Routes>
             <Route path='/' element={<Inicio />} />
@@ -59,7 +59,7 @@ export default function App() {
             <Route path='/masculino' element={<ItemMasculino />} />
           </Routes>
         </Layout>
-     
+        </CartProvider>
     </BrowserRouter>
   )
 }

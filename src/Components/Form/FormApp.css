@@ -74,9 +74,8 @@
 
 .swal2-confirm{
     background-color: black;
-    color: var(--colorPrimario);
+    color: ghostwhite;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    
 }
 
 .swal2-title{
@@ -85,8 +84,9 @@
 }
 
 .swal2-popup{
-    background-color: #ff13a7;
-    width: 400px;
+    background-color: ghostwhite;
+    width: 300px;
+    font-size: 12px;
     
 }
 
@@ -94,7 +94,7 @@
     font-weight: bold;
     font-size: 15px;
     display: flex;
-   justify-content: end;
+    justify-content: end;
 }
 
 

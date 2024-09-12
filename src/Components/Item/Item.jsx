@@ -1,8 +1,12 @@
 import { useContext } from "react"
 import "./Item.css"
+import Swal from "sweetalert2"
+import CartContext from "../Cart/CartContext"
 
 
 export default function Item({ item }) {
+   const {cart, addToCart} = useContext(CartContext);
+  
 
     return (
         <div className="itemContainer">
@@ -13,7 +17,7 @@ export default function Item({ item }) {
                 <h3 className="itemModelo">{item.nombre}</h3>
                 <h3 className="itemMl">{item.ml}</h3>
             </div>
-            <button className='addToCartButton' >Agregar al carrito</button>
+            <button className='addToCartButton' onClick={()=>addToCart(item)}>Agregar al carrito</button>
         </div>
     )
 }
