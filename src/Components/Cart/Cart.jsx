@@ -14,7 +14,7 @@ export default function Cart() {
     return (
         <div className='cartImgLogo'>
             <label className='cart-button' htmlFor={cartCheckboxId}>
-                <span>{quantityProductsCart}</span>
+                <span className='numberCartSpan'>{quantityProductsCart}</span>
                 <img src={cartImg} alt="cart" className='cartImg' />
                 
             </label>
