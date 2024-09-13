@@ -1,0 +1,12 @@
+.carritoCheck{
+    width: 20px;
+}
+
+.buttonsCart{
+    width: 100px;
+}
+
+.addToCartButton1{
+ border: none;
+ background-color: var(--colorPrimario);
+}

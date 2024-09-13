@@ -5,18 +5,28 @@ import Swal from 'sweetalert2'
 export default function CartProvider({ children }) {
   const [cart, setCart] = useState([]);
 
+
   const addToCart = (product) => {
     const itemInCart = cart.find((item)=> item === product)
     if(itemInCart){
       console.log("ya esta en el carrito")
-    }else{
 
+    }else{
+      Swal.fire({
+        position: "center",
+        icon: "success",
+        title: "Agregado al carrito",
+        showConfirmButton: false,
+        timer: 1500
+      });
       setCart([...cart, product])
     }
         
   };
 
-
+  const removeFromCart = product =>{
+    setCart(prevState=>prevState.filter(item=>item.id != product.id))
+  }
   console.log(cart)
 
   return (

@@ -1,12 +1,16 @@
 import { useContext } from "react"
 import "./Item.css"
-import Swal from "sweetalert2"
 import CartContext from "../Cart/CartContext"
-
+import { IsInCartIcon , AddToCartIcon } from "../IconsCart/IconsCart";
 
 export default function Item({ item }) {
    const {cart, addToCart} = useContext(CartContext);
-  
+
+   const checkProductInCart = product =>{
+    return cart.some(item=>item === product)
+   }
+
+   const isProductInCart = checkProductInCart(item);
 
     return (
         <div className="itemContainer">
@@ -17,7 +21,10 @@ export default function Item({ item }) {
                 <h3 className="itemModelo">{item.nombre}</h3>
                 <h3 className="itemMl">{item.ml}</h3>
             </div>
-            <button className='addToCartButton' onClick={()=>addToCart(item)}>Agregar al carrito</button>
+            <button className='addToCartButton' onClick={()=>{
+                isProductInCart ? "Agregado" :
+                addToCart(item)}
+                }>{isProductInCart ? <IsInCartIcon/> : <AddToCartIcon/> }</button>
         </div>
     )
 }

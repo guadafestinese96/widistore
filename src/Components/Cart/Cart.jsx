@@ -4,11 +4,13 @@ import './Cart.css'
 import CartContext from './CartContext';
 import CartItem from './CartItem'
 
+
 export default function Cart() {
     const cartCheckboxId = useId();
     const {cart} = useContext(CartContext);
     const quantityProductsCart = cart.length;
-    
+
+
     return (
         <div className='cartImgLogo'>
             <label className='cart-button' htmlFor={cartCheckboxId}>
@@ -19,7 +21,7 @@ export default function Cart() {
             <input id={cartCheckboxId} type="checkbox" hidden />
 
             <aside className='cart'>
-            <ul>
+            <ul key="key">
                  {cart.map((productoCarrito)=>(
                     <li key={productoCarrito.id}>
                     <CartItem item={productoCarrito}/>
