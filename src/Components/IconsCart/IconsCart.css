@@ -9,4 +9,5 @@
 .addToCartButton1{
  border: none;
  background-color: var(--colorPrimario);
+ color: black;
 }
