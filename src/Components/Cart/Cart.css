@@ -9,7 +9,7 @@
     color: var(--colorSecundario);
     text-transform: capitalize;
     font-size: 12px;
-  
+    height: 100vh;
   }
   
  
