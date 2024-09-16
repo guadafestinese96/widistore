@@ -7,7 +7,8 @@ export default function CartProvider({ children }) {
 
 
   const addToCart = (product) => {
-    const itemInCart = cart.find((item)=> item === product)
+    const itemInCart = cart.find((item)=> item.id === product.id)
+    
     if(itemInCart){
       console.log("ya esta en el carrito")
 
@@ -24,14 +25,16 @@ export default function CartProvider({ children }) {
         
   };
 
-  const removeFromCart = product =>{
-    setCart(prevState=>prevState.filter(item=>item.id != product.id))
+  const removeFromCart = (product)=>{
+    setCart(cart.filter((item)=> item.id != product.id))
   }
+
+
   console.log(cart)
 
   return (
     <CartContext.Provider
-      value={{cart, addToCart}}
+      value={{cart, addToCart, removeFromCart}}
     >
       {children}
     </CartContext.Provider>

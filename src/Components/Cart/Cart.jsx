@@ -19,7 +19,7 @@ export default function Cart() {
                 
             </label>
             <input id={cartCheckboxId} type="checkbox" hidden />
-
+            
             <aside className='cart'>
             <ul key="key">
                  {cart.map((productoCarrito)=>(

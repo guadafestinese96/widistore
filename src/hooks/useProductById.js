@@ -2,7 +2,7 @@ import { doc, getDoc, getFirestore } from "firebase/firestore";
 import { useEffect, useState } from "react";
 
 
-export default function useProductById(id) {
+export default function useProductById(item) {
 
     const [product, setProduct] = useState(undefined);
     const [loading, setLoading] = useState(true);
@@ -10,7 +10,7 @@ export default function useProductById(id) {
     useEffect(() => {
         const db = getFirestore();
     
-        const productRef = doc(db, "products", id);
+        const productRef = doc(db, "products", item.id);
         getDoc(productRef)
           .then((doc) => {
             if (doc.exists()) {
@@ -23,7 +23,7 @@ export default function useProductById(id) {
             }
           })
           .finally(() => setLoading(false));
-      }, [id]);
+      }, [item.id]);
     
     return {product, loading};
 }

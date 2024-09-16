@@ -5,6 +5,7 @@ import CartContext from "./CartContext";
 
 export default function CartItem({ item }) {
     const { count, increment, decrement } = useCount();
+    const {removeFromCart} = useContext(CartContext)
 
     return (
         <div className="cartItemContainer">
@@ -27,7 +28,7 @@ export default function CartItem({ item }) {
                 <span className="cantidad">Cantidad: {count}</span>
                 <button className='removeCartButton' onClick={decrement} disabled={count == 0}>-</button>
                 <button className='addCartButton' onClick={increment}>+</button>
-                <img src={deleteCart} alt="deleteCart" className="deleteFromCartImg" />
+                <img src={deleteCart} alt="deleteCart" className="deleteFromCartImg" onClick={removeFromCart}/>
             </footer>
 
         </div>
