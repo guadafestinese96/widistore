@@ -26,7 +26,7 @@ export default function CartProvider({ children }) {
   };
 
   const removeFromCart = (product)=>{
-    setCart(cart.filter((item)=> item.id != product.id))
+    setCart(prevState => prevState.filter(item=>item.id != product.id))
   }
 
 

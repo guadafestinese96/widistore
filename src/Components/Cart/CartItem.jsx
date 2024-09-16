@@ -11,7 +11,7 @@ export default function CartItem({ item }) {
         <div className="cartItemContainer">
             <div className="cartItemShow">
                 <div className="imgCartContainer">
-                <img className="productsCartImg"
+                <img className="productsCartImg vapeImgCart"
                     src={item.img}
                     alt={item.nombre}
                 />
@@ -28,7 +28,7 @@ export default function CartItem({ item }) {
                 <span className="cantidad">Cantidad: {count}</span>
                 <button className='removeCartButton' onClick={decrement} disabled={count == 0}>-</button>
                 <button className='addCartButton' onClick={increment}>+</button>
-                <img src={deleteCart} alt="deleteCart" className="deleteFromCartImg" onClick={removeFromCart}/>
+                <img src={deleteCart} alt="deleteCart" className="deleteFromCartImg" onClick={()=>removeFromCart(item)}/>
             </footer>
 
         </div>
