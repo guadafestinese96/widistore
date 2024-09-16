@@ -127,3 +127,20 @@
     padding: 2px;
 
   }
+
+  .finalizarCompraFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .finalizarCompraBtn{
+    background-color: var(--colorPrimario);
+    padding: 3px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 8px;
+  }
+
+  .finalizarCompraNone{
+    display: none;
+  }
