@@ -53,6 +53,11 @@
     font-size: 15px;
 }
 
+.itemPrecio{
+    font-size: 12px;
+    color: var(--colorSecundario);
+}
+
 .itemDetails{
     display: flex;
     flex-direction: column;
@@ -89,7 +94,7 @@
     
 .itemContainer{
     width: 160px;
-    height: 240px;   
+    height: 250px;   
 }
 .itemImgContainer{
     margin-bottom: 5px;
@@ -104,7 +109,7 @@
 .itemMarca{
     font-size: 13px;
 }
-.itemModelo, .itemMl{
+.itemModelo, .itemMl, .itemPrecio{
     font-size: 10px;
 }
 }

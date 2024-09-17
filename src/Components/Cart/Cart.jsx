@@ -29,7 +29,7 @@ export default function Cart() {
                     ))}
                 </ul>
                 <footer className={cart.length>0 ? 'finalizarCompraFooter' : 'finalizarCompraNone'}>
-                    <button className='finalizarCompraBtn'>Finalizar Compra</button>
+                    <button className='finalizarCompraBtn'> Finalizar Compra </button>
                 </footer>
             </aside>
 

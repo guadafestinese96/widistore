@@ -1,9 +1,9 @@
-import {  useState } from "react";
+import {  useState, useEffect } from "react";
 import CartContext from "./CartContext";
 import Swal from 'sweetalert2'
 
 export default function CartProvider({ children }) {
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState(localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : []);
 
 
   const addToCart = (product) => {
@@ -28,7 +28,10 @@ export default function CartProvider({ children }) {
   const removeFromCart = (product)=>{
     setCart(prevState => prevState.filter(item=>item.id != product.id))
   }
-
+  
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
 
   console.log(cart)
 
