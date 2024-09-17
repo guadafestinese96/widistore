@@ -136,6 +136,8 @@
 
   .finalizarCompraBtn{
     background-color: var(--colorPrimario);
+    color: black;
+    border: 1px solid black;
     padding: 3px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border-radius: 8px;
