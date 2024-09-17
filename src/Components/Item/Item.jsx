@@ -22,9 +22,9 @@ export default function Item({ item }) {
                 <h3 className="itemMl">{item.ml}</h3>
                 <h3 className="itemPrecio">${item.precio}</h3>
             </div>
-            <div className='addToCartButton' 
+            <div className='addToCartButton' disabled={item.stock===0} 
             onClick={
-                ()=>{ isProductInCart && item.stock >0? "Agregado" : addToCart(item)}
+                ()=>{ isProductInCart? "Agregado" : addToCart(item)}
                 }>{isProductInCart ? <IsInCartIcon/> : <AddToCartIcon item={item}/>}</div>
         </div>
     )
