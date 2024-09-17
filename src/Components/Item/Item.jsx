@@ -24,7 +24,7 @@ export default function Item({ item }) {
             </div>
             <div className='addToCartButton' 
             onClick={
-                ()=>{ isProductInCart ? "Agregado" : addToCart(item)}
+                ()=>{ isProductInCart && item.stock >0? "Agregado" : addToCart(item)}
                 }>{isProductInCart ? <IsInCartIcon/> : <AddToCartIcon item={item}/>}</div>
         </div>
     )
