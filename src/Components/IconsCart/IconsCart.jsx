@@ -5,7 +5,7 @@ export function AddToCartIcon({item}){
     const text = ["Agregar al carrito", "Sin Stock"];
 
     return(
-        <div className='buttonsCart' >
+        <div className='buttonsCart' disabled={item.stock === 0}>
            <button className='addToCartButton1' disabled={item.stock === 0}>{item.stock === 0 ? text[1] : text[0]}</button>
         </div>
         
