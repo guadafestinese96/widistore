@@ -26,6 +26,7 @@ import AllProductsVapes from './Components/AllProducts/AllProductsVapes'
 import ItemFemenino from './Components/Item/ItemFemenino'
 import ItemMasculino from './Components/Item/ItemMasculino'
 import CartProvider from './Components/Cart/CartProvider'
+import CheckoutForm from './Components/Form/CheckoutForm'
 
 export default function App() {
 
@@ -36,6 +37,7 @@ export default function App() {
           <Routes>
             <Route path='/' element={<Inicio />} />
             <Route path='/form' element={<FormApp />} />
+            <Route path='/buyform' element={<CheckoutForm />} />
             <Route path='/armani' element={<ItemArmani />} />
             <Route path='/pacorabanne' element={<ItemPaco />} />
             <Route path='/carolinaherrera' element={<ItemCarolina />} />

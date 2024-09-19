@@ -1,4 +1,4 @@
-import {  useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import CartContext from "./CartContext";
 import Swal from 'sweetalert2'
 
@@ -7,12 +7,12 @@ export default function CartProvider({ children }) {
 
 
   const addToCart = (product) => {
-    const itemInCart = cart.find((item)=> item.id === product.id)
-    
-    if(itemInCart){
+    const itemInCart = cart.find((item) => item.id === product.id)
+
+    if (itemInCart) {
       console.log("ya esta en el carrito")
 
-    }else{
+    } else {
       Swal.fire({
         position: "center",
         icon: "success",
@@ -22,13 +22,12 @@ export default function CartProvider({ children }) {
       });
       setCart([...cart, product])
     }
-        
   };
 
-  const removeFromCart = (product)=>{
-    setCart(prevState => prevState.filter(item=>item.id != product.id))
+  const removeFromCart = (product) => {
+    setCart(prevState => prevState.filter(item => item.id != product.id))
   }
-  
+
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
@@ -37,7 +36,7 @@ export default function CartProvider({ children }) {
 
   return (
     <CartContext.Provider
-      value={{cart, addToCart, removeFromCart}}
+      value={{ cart, addToCart, removeFromCart }}
     >
       {children}
     </CartContext.Provider>

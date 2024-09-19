@@ -4,10 +4,10 @@ import CartContext from "../Cart/CartContext"
 import { IsInCartIcon , AddToCartIcon } from "../IconsCart/IconsCart";
 
 export default function Item({ item }) {
-   const {cart, addToCart} = useContext(CartContext);
+   const {cart} = useContext(CartContext);
 
    const checkProductInCart = product =>{
-    return cart.some(item=>item === product)
+    return cart.find((item)=> item.id === product.id)
    }
 
    const isProductInCart = checkProductInCart(item);
@@ -22,10 +22,9 @@ export default function Item({ item }) {
                 <h3 className="itemMl">{item.ml}</h3>
                 <h3 className="itemPrecio">${item.precio}</h3>
             </div>
-            <div className='addToCartButton' disabled={item.stock===0} 
-            onClick={
-                ()=>{ isProductInCart? "Agregado" : addToCart(item)}
-                }>{isProductInCart ? <IsInCartIcon/> : <AddToCartIcon item={item}/>}</div>
+            <div className='addToCartButton' 
+           >{isProductInCart ? <IsInCartIcon/> : <AddToCartIcon item={item}/>}</div>
         </div>
     )
 }
+

@@ -1,12 +1,13 @@
 import useCount from "../../hooks/useCount"
 import deleteCart from "../../../public/deleteCart.png"
-import { useContext } from "react";
+import { useContext} from "react";
 import CartContext from "./CartContext";
 
 export default function CartItem({ item }) {
     const { count, increment, decrement } = useCount();
     const {removeFromCart} = useContext(CartContext)
-    
+
+   
     return (
         <div className="cartItemContainer">
             <div className="cartItemShow">
