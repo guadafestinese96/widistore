@@ -20,7 +20,7 @@ export default function CartProvider({ children }) {
         showConfirmButton: false,
         timer: 1500
       });
-      setCart([...cart, product])
+      setCart([...cart, {...product, quantity: 1}])
     }
   };
 

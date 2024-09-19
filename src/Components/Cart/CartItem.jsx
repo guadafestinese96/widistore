@@ -28,7 +28,8 @@ export default function CartItem({ item }) {
             <footer className="cartFooter">
                 <span className="cantidad">Cantidad: {count}</span>
                 <button className='removeCartButton' onClick={decrement} disabled={count == 0}>-</button>
-                <button className='addCartButton' onClick={increment} disabled={count === item.stock}>+</button>
+                <button className='addCartButton' onClick={increment}
+                disabled={count === item.stock}>+</button>
                 <img src={deleteCart} alt="deleteCart" className="deleteFromCartImg" onClick={()=>removeFromCart(item)}/>
             </footer>
 
