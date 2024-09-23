@@ -4,7 +4,6 @@ import { NavLink } from 'react-router-dom'
 import DropdownPerfus from './DropdownPerfus'
 import DropdownVapes from './DropdownVapes'
 import Cart from '../Cart/Cart'
-import LoginHeader from './LoginHeader'
 
 
 export default function Header() {
@@ -17,9 +16,6 @@ export default function Header() {
             <div className='dropdowns'>
                 <DropdownPerfus />
                 <DropdownVapes />
-            </div>
-            <div>
-                <LoginHeader/>
             </div>
        
             <div className='cartMenu'>
