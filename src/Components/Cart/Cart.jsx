@@ -30,7 +30,7 @@ export default function Cart() {
             <aside className='cart'>
                 <ul key="key" className='ulCart'>
                     {cart.map((productoCarrito) => (
-                        <li key={productoCarrito.id}>
+                        <li key={productoCarrito.id} className='liCart'>
                             <CartItem item={productoCarrito} />
                         </li>
                     ))}
