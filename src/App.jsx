@@ -27,13 +27,18 @@ import ItemFemenino from './Components/Item/ItemFemenino'
 import ItemMasculino from './Components/Item/ItemMasculino'
 import CartProvider from './Components/Cart/CartProvider'
 import CheckoutForm from './Components/Form/CheckoutForm'
+import { Auth0Provider } from '@auth0/auth0-react'
 
 export default function App() {
 
   return (
     <BrowserRouter>
+    <Auth0Provider domain='dev-7cmkqcbih4h2hfid.us.auth0.com' clientId='5WjTYEJ2O7upE5MFyuhcNTTuNrX6XZt1' authorizationParams={{
+      redirect_uri: window.location.origin
+    }}>
       <CartProvider>
         <Layout>
+          
           <Routes>
             <Route path='/' element={<Inicio />} />
             <Route path='/form' element={<FormApp />} />
@@ -62,6 +67,7 @@ export default function App() {
           </Routes>
         </Layout>
         </CartProvider>
+        </Auth0Provider>
     </BrowserRouter>
   )
 }

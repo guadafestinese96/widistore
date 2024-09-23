@@ -1,0 +1,12 @@
+.logoutBtn{
+    width: 60px;
+    background-color: var(--colorPrimario);
+    border-radius: 5px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18px;
+    padding: 2px;
+    font-size: 10px;
+}

@@ -18,8 +18,10 @@ const firebaseConfig = {
 initializeApp(firebaseConfig);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <div className='app'>
-        <App />
-    </div>
-    
+  <div className='app'>
+
+    <App />
+
+  </div >
+
 )
