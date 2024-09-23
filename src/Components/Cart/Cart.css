@@ -44,7 +44,7 @@
     align-items: center;
     font-weight: bold;
     color: var(--colorPrimario);
-    border: 1px solid var(--colorPrimario);
+    border: 1px solid black;
   }
   .disabledButton{
      background-color: var(--colorPrimario);
