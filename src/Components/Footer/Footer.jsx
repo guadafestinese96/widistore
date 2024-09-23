@@ -4,7 +4,7 @@ import logoMap from '../../../public/mapN.png'
 import './Footer.css'
 import { NavLink, Link } from 'react-router-dom'
 import email from '../../../public/emailN.png'
-import LoginHeader from '../Header/LoginHeader'
+import LoginFooter from './LoginFooter'
 
 export default function Footer() {
 
@@ -55,7 +55,7 @@ export default function Footer() {
             </div>
 
             <div className='loginFooter'>
-                <LoginHeader/>
+                <LoginFooter/>
             </div>
 
         </div>

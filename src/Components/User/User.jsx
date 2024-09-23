@@ -4,9 +4,7 @@ import Logout from "../Logout/Logout";
 
 
 export default function User() {
-    const { user, isLoading } = useAuth0();
-
-    if (isLoading) return <div className="loadingUser">Loading user...</div>
+    const { user } = useAuth0();
 
     return (
 

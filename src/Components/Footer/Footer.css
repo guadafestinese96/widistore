@@ -47,6 +47,11 @@
     display: flex;
 }
 
+.loadingFooter{
+    color: var(--colorSecundario);
+    font-size: 10px;
+}
+
 @media screen and (min-width: 320px) and (max-width: 840px){
     .datos{
         font-size: 10px;
