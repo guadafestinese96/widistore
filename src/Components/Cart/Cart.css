@@ -21,7 +21,9 @@
     border-bottom: 1px solid var(--colorPrimario);
     padding: 3px;
   }
-  
+  .ulCart{
+    padding-top: 40px;
+  }
   .cartFooter {
     display: flex;
     gap: 8px;
@@ -70,7 +72,7 @@
   }
 
   .productsCartImg{
-    height: 70px;
+    height: 60px;
   }
 
 

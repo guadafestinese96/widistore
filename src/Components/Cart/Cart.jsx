@@ -28,7 +28,7 @@ export default function Cart() {
             <input id={cartCheckboxId} type="checkbox" hidden />
 
             <aside className='cart'>
-                <ul key="key">
+                <ul key="key" className='ulCart'>
                     {cart.map((productoCarrito) => (
                         <li key={productoCarrito.id}>
                             <CartItem item={productoCarrito} />
