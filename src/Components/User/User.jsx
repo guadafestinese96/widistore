@@ -11,7 +11,7 @@ export default function User() {
     return (
 
         <div className="divUserLogin">
-            <div className="imgUserContainer">
+            <div className="imgContainerLoginOk">
                 <img className='imgUserDetails' src={user.picture} alt={user.name} />
             </div>
 
