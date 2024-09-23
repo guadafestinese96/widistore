@@ -34,7 +34,7 @@
     align-items: center;
   }
   
- .removeCartButton, .addCartButton {
+ .removeCartButton, .addCartButton,  .disabledButton{
     padding: 1px;
     border-radius: 2px;
     width: 15px;
@@ -45,7 +45,11 @@
     font-weight: bold;
     color: var(--colorPrimario);
   }
-  
+  .disabledButton{
+     background-color: var(--colorPrimario);
+     color: var(--colorSecundario);
+  }
+ 
   .cart-button {
     align-items: center;
     background: var(--colorPrimario);
@@ -151,3 +155,5 @@
   .finalizarCompraNone{
     display: none;
   }
+
+ 
