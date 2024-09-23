@@ -59,6 +59,7 @@
     }
     .footerDiv{
         height: 160px;
+        padding-bottom: 20px;
     }
     .logosFooter{
         width: 15px;
