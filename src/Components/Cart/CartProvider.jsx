@@ -28,8 +28,9 @@ export default function CartProvider({ children }) {
     setCart(prevState => prevState.filter(item => item.id != product.id))
   }
 
+ 
   const cartTotal = cart.reduce((acc, item) => {
-    return acc + item.precio * item.quantity;
+    return acc + (item.precio * item.quantity);
   }, 0)
 
   const formateador = new Intl.NumberFormat('es-ES');
