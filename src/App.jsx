@@ -28,6 +28,7 @@ import ItemMasculino from './Components/Item/ItemMasculino'
 import CartProvider from './Components/Cart/CartProvider'
 import CheckoutForm from './Components/Form/CheckoutForm'
 import { Auth0Provider } from '@auth0/auth0-react'
+import FinalizarCompra from './Components/Cart/FinalizarCompra'
 
 export default function App() {
 
@@ -64,6 +65,7 @@ export default function App() {
             <Route path='/productosvapes' element={<AllProductsVapes />} />
             <Route path='/femenino' element={<ItemFemenino />} />
             <Route path='/masculino' element={<ItemMasculino />} />
+            <Route path='/finalizarcompra' element={<FinalizarCompra/>} />
           </Routes>
         </Layout>
         </CartProvider>

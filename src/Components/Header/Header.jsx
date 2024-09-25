@@ -13,6 +13,8 @@ export default function Header() {
                 <img src={logoWidi} alt="logoWidi" className='logoHeader' />
             </NavLink>
 
+           
+
             <div className='dropdowns'>
                 <DropdownPerfus />
                 <DropdownVapes />

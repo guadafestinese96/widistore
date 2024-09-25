@@ -4,10 +4,9 @@ import { useContext} from "react";
 import CartContext from "./CartContext";
 
 export default function CartItem({ item }) {
-    const { count, increment, decrement } = useCount();
+    const { count, increment, decrement } = useCount(item);
     const {removeFromCart} = useContext(CartContext)
-
-   
+    
     return (
         <div className="cartItemContainer">
             <div className="cartItemShow">

@@ -1,0 +1,33 @@
+.finalizarCompraContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imgFinalizarCompra{
+    width: 80px;
+}
+
+.detailsFc{
+    font-size: 10px;
+    text-transform: capitalize;
+}
+.detailsFcTotal{
+    font-size: 15px;
+    
+}
+
+
+.totalContainer{
+    background-color: var(--colorPrimario);
+    width: 200px;
+    border: 1px solid var(--colorPrimario);
+    border-radius: 5px;
+}
+
+.detailProductsInCart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

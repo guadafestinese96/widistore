@@ -3,6 +3,7 @@ import cartImg from '../../../public/cart.png'
 import './Cart.css'
 import CartContext from './CartContext';
 import CartItem from './CartItem'
+import { NavLink } from 'react-router-dom';
 // import { initMercadoPago, Wallet } from '@mercadopago/sdk-react'
 // import axios from "axios";
 
@@ -37,8 +38,9 @@ export default function Cart() {
                 </ul>
                 <footer className={cart.length>0 ? 'finalizarCompraFooter' : 'finalizarCompraNone'}>
                     
+                    <NavLink to='/finalizarcompra'>
                     <button className='finalizarCompraBtn'> Finalizar Compra </button>
-                    
+                    </NavLink>
                     {/* <Wallet initialization={{ preferenceId: '<PREFERENCE_ID>' }} customization={{ texts:{ valueProp: 'smart_option'}}} /> */}
 
                 </footer>
