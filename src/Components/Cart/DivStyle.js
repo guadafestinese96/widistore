@@ -7,8 +7,8 @@ export const Div = styled.aside`
     margin: 5px;
     padding: 5px;
     border-radius: 5px;
-    width: 150px;
-    height: 180px;
+    width: 130px;
+    height: 150px;
     display:flex;
     flex-direction: column;
     justify-content: center;
