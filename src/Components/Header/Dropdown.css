@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Playwrite+DE+Grund:wght@100..400&display=swap');
+
 .btn,
 .btn-secondary,
 .dropdown-toggle {
@@ -30,9 +33,10 @@
 }
 
 .titlePerfumes{
-    font-size: 40px;
-    font-family: "Qwitcher Grypen", cursive; 
-    text-transform: lowercase; 
+    font-size: 15px;
+    font-family: "Playwrite DE Grund", cursive;
+    text-transform: capitalize; 
+    letter-spacing: 1px;
     color: var(--colorSecundario);
     filter: drop-shadow(1px 1px 1px black);
 }
