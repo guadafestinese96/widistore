@@ -1,8 +1,8 @@
- .titleIndex h1{
-    
+ .titleIndex{
         font-family: "Qwitcher Grypen", cursive;    
         text-transform: lowercase;
-        text-shadow: #ff13a7 5px 2px 5px;
+        text-shadow: #ff13a7 5px 2px 3px;
+        filter: drop-shadow(5px 1px 2px white);
         font-size: 100px;
         margin: 20px;
 } 

@@ -1,6 +1,6 @@
 
 import { NavLink } from 'react-router-dom'
-import vapeIcon from '../../../public/vape.png'
+import vapeIcon from '../../../public/vapes.png'
 import './Dropdown.css'
 
 const rutas_vapes=[
