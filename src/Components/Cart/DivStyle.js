@@ -1,10 +1,17 @@
 import styled from 'styled-components';
 
 export const Div = styled.aside`
-    background: white;
+    background-color: rgb(0, 0, 0, 0.8);
+    color: var(--colorPrimario);
     font-size: 10px;
     margin: 5px;
     padding: 5px;
     border-radius: 5px;
     width: 150px;
+    height: 180px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    border: 1px solid var(--colorPrimario);
 `

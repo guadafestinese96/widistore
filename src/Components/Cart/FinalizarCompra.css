@@ -5,7 +5,9 @@
     align-items: center;
 }
 .imgFinalizarCompra{
-    width: 80px;
+    height: 80px;
+    margin: 10px;
+    
 }
 
 .detailsFc{
@@ -20,7 +22,7 @@
 
 .totalContainer{
     background-color: var(--colorPrimario);
-    width: 200px;
+    width: 160px;
     border: 1px solid var(--colorPrimario);
     border-radius: 5px;
 }
