@@ -29,13 +29,7 @@ export default function CartProvider({ children }) {
   }
 
  
-  const cartTotal = cart.reduce((acc, item) => {
-    return acc + (item.precio * item.quantity);
-  }, 0)
-
-  const formateador = new Intl.NumberFormat('es-ES');
-  const numeroFormateado = formateador.format(cartTotal);
-  console.log(numeroFormateado);
+ 
 
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
@@ -45,7 +39,7 @@ export default function CartProvider({ children }) {
 
   return (
     <CartContext.Provider
-      value={{ cart, addToCart, removeFromCart, numeroFormateado }}
+      value={{ cart, addToCart, removeFromCart }}
     >
       {children}
     </CartContext.Provider>
