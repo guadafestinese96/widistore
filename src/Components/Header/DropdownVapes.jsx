@@ -27,7 +27,7 @@ export default function DropdownVapes() {
                 <ul className="dropdown-menu">
                     {rutas_vapes.map((ruta, index) => (
                         <li key={index} className="liDropdown">
-                            <NavLink to={ruta.path} className="dropdown-item">
+                            <NavLink to={ruta.path} className={({isActive})=> isActive ? "dropdown-item-active" : "dropdown-item"}>
                             {ruta.label}
                             </NavLink>
                         </li>

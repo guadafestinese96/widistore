@@ -83,7 +83,7 @@ export default function DropdownPerfus() {
                 <ul className="dropdown-menu">
                     {rutas.map((ruta, index) => (
                         <li key={index} className="liDropdown">
-                            <NavLink to={ruta.path} className="dropdown-item">
+                            <NavLink to={ruta.path} className={({isActive})=> isActive ? "dropdown-item-active" : "dropdown-item"}>
                                 {ruta.label}
                             </NavLink>
                         </li>
